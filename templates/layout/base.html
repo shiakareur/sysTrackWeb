@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/base.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.alicorp.com.pe/static/images/logo-alicorp.png" class="d-inline-block align-top">
+            </a>
+            <div class="ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/indicadores">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos y soluciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sostenibilidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Oportunidades Alicorp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sala de prensa</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">{% block content %}{% endblock %}</div>
+</body>
+
+</html>
