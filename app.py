@@ -34,6 +34,10 @@ def postclj():
 def indicadores():
     return render_template("indicadores.html")
 
+@app.route("/SysTrack")
+def systrack():
+    return render_template("systrack.html")
+
 if __name__=="__main__":
     app.run()
 
